@@ -11,6 +11,7 @@ body {
     width: 870px;
     background-color: #fff;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -22,7 +23,8 @@ h2 {
 /* top banner and top blog  styles */
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-players {
@@ -88,4 +90,62 @@ article h3 {
 
 article span {
     color: #562EFF;
+}
+
+/*================== course section style =================== */
+.course-title {
+    margin: 30px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.course {
+    box-shadow: 2px 2px 4px 2px #ebe8e8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.course h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.course p {
+    color: #ED6B4F;
+    margin: 10px 0;
+}
+
+.course .course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-info .ratings {
+    color: #FFC014;
+}
+
+.ratings .last {
+    color: #AEAEAE;
+}
+
+.course .time {
+    color: #FF4A60;
+    background-color: #ffd1d6;
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+
+.time i {
+    margin-right: 5px;
 }
