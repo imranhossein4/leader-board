@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab&display=swap');
 
+
 body {
     background-color: #f3f1ff;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +21,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* top banner and top blog  styles */
+/*========= top banner and top blog  styles =======*/
 main {
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ hr {
 }
 
 
-/* top blog style */
+/*=============== top blog style ================*/
 .top-blogs {
     padding-left: 30px;
     padding-bottom: 30px;
@@ -148,4 +149,81 @@ article span {
 
 .time i {
     margin-right: 5px;
+}
+
+
+/* responsive coding */
+/* responsive for small and mobile device  */
+@media screen and (max-width: 576px) {
+
+    /* top player section */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .hr {
+        margin: auto;
+    }
+
+    /* top blog section  */
+    .top-blogs .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs article {
+        display: block;
+    }
+
+    article .article-info {
+        margin-left: 0;
+    }
+
+    .article-info h3 {
+        margin-right: 5px;
+    }
+
+    /* lates course section  */
+    .container .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        margin-bottom: 0;
+    }
+
+    .course {
+        margin-bottom: 30px;
+    }
+}
+
+/* responsive for tablet  */
+
+@media screen and (min-width: 577px) and (max-width:870px) {
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .blogs article {
+        display: block;
+    }
+
+    article .article-info {
+        margin-left: 0;
+    }
+
+    .container .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course {
+        margin-bottom: 30px;
+    }
 }
